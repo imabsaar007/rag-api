@@ -1,0 +1,38 @@
+{
+  "documents": [
+    {
+      "doc_id": "returns-policy",
+      "text": "Customers may return any unused item within 30 days of purchase for a full refund. Refunds are issued to the original payment method within 7 business days after the returned item is received. Items marked final sale cannot be returned. Return shipping is free for defective items; otherwise the customer pays return shipping."
+    },
+    {
+      "doc_id": "shipping-policy",
+      "text": "Standard shipping takes 5 business days. Express shipping takes 2 business days and costs a flat fee of 15 dollars. Orders above 100 dollars qualify for free standard shipping. We currently ship only within the domestic territory and do not offer international delivery."
+    },
+    {
+      "doc_id": "support-hours",
+      "text": "The support team is available Monday to Friday from 9 am to 6 pm local time. Support is closed on public holidays. Customers can reach support by email or through the live chat widget. Phone support is not offered. Average first response time for email is 24 hours."
+    },
+    {
+      "doc_id": "warranty",
+      "text": "All electronic products include a one year limited warranty covering manufacturing defects. The warranty does not cover accidental damage or water damage. To claim the warranty, customers must provide the order number and a photo of the defect. Approved claims are repaired or replaced at our discretion."
+    }
+  ],
+  "questions": [
+    {"question": "How many days do I have to return an item?", "expect_any": ["30"], "answerable": true},
+    {"question": "How quickly are refunds issued after the return is received?", "expect_any": ["7 business days", "7 days", "seven"], "answerable": true},
+    {"question": "Can final sale items be returned?", "expect_any": ["cannot", "can't", "not"], "answerable": true},
+    {"question": "Who pays return shipping for defective items?", "expect_any": ["free", "we", "company", "not the customer"], "answerable": true},
+    {"question": "How long does express shipping take?", "expect_any": ["2 business days", "two business days", "2 days"], "answerable": true},
+    {"question": "How much does express shipping cost?", "expect_any": ["15"], "answerable": true},
+    {"question": "What order value qualifies for free standard shipping?", "expect_any": ["100"], "answerable": true},
+    {"question": "Do you ship internationally?", "expect_any": ["no", "not", "only", "domestic"], "answerable": true},
+    {"question": "What hours is support available?", "expect_any": ["9 am", "9am", "9:00"], "answerable": true},
+    {"question": "Is phone support offered?", "expect_any": ["no", "not"], "answerable": true},
+    {"question": "How long is the first email response time on average?", "expect_any": ["24"], "answerable": true},
+    {"question": "How long is the warranty on electronics?", "expect_any": ["one year", "1 year", "year"], "answerable": true},
+    {"question": "Does the warranty cover water damage?", "expect_any": ["not", "no", "doesn't", "does not"], "answerable": true},
+    {"question": "What do I need to provide to claim the warranty?", "expect_any": ["order number", "photo"], "answerable": true},
+    {"question": "What is the CEO's favourite colour?", "expect_any": [], "answerable": false},
+    {"question": "What is the capital of Australia?", "expect_any": [], "answerable": false}
+  ]
+}
